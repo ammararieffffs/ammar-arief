@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ammar Arief · Front-end developer</title>
+  <meta name="description" content="Ammar Arief, front-end developer in Selangor, Malaysia. Websites with motion, layered imagery and scroll-driven storytelling.">
+  <!-- safety: if scripts never run, lift the curtain anyway -->
+  <script>setTimeout(function () { document.documentElement.classList.add("no-curtain"); }, 4500);</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,100..900;1,50..150,100..900&family=IBM+Plex+Mono:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="curtain" aria-hidden="true"><span class="curtain__mark">AA</span><span class="curtain__count mono">000</span><span class="curtain__bar"></span></div>
+  <a class="skip mono" href="#main">Skip to content</a>
+
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Ammar Arief, home">
+      <span class="brand__mark">AA</span><span class="brand__sep"></span>
+      <span class="brand__text mono">Front-end developer<br>&amp; creative</span>
+    </a>
+    <span class="header__rule" aria-hidden="true"></span>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" aria-current="page"><span class="nav__n">01</span><span class="nav__t" data-hover-scramble>Home</span></a>
+      <a href="work.html"><span class="nav__n">02</span><span class="nav__t" data-hover-scramble>Work</span></a>
+      <a href="about.html"><span class="nav__n">03</span><span class="nav__t" data-hover-scramble>About</span></a>
+      <a href="#contact"><span class="nav__n">04</span><span class="nav__t" data-hover-scramble>Contact</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" data-hero aria-label="Introduction">
+      <h1 class="hero__name display">
+        <span class="line"><span class="split accent">A</span><span class="split">mmar</span></span>
+        <span class="line"><span class="split">Arief</span></span>
+      </h1>
+
+      <p class="hero__roles mono">
+        <span class="line"><span>Front-end developer /</span></span>
+        <span class="line"><span>Creative developer /</span></span>
+        <span class="line"><span>Interactive design</span></span>
+      </p>
+
+      <div class="hero__ctas">
+        <a class="btn btn--solid" href="work.html" data-magnetic>View my work <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a>
+        <a class="btn" href="about.html" data-magnetic>About me</a>
+      </div>
+
+      <div class="hero__stamp">
+        <div class="barcode" data-barcode="AMMAR ARIEF"></div>
+        <p class="mono">Portfolio <span data-year>2026</span><br>Selangor, Malaysia</p>
+      </div>
+
+      <!-- Collage. Positions are % of the collage box: --x --y --w --h.
+           data-speed: how far it drifts on scroll. data-depth: mouse parallax (px). -->
+      <div class="collage">
+        <p class="tagline mono" aria-label="Ideas into interactive experiences">
+          <span data-scramble style="display:block">Ideas into</span>
+          <span data-scramble style="display:block">interactive</span>
+          <span data-scramble style="display:block">experiences</span>
+        </p>
+
+        <div class="c-item ghost" style="--x:16;--y:22;--w:9;--h:40" data-speed=".5"><div class="c-inner" data-depth="4"></div></div>
+        <div class="c-item ghost ghost--sage" style="--x:16;--y:42.5;--w:9;--h:17.5" data-speed=".6"><div class="c-inner" data-depth="5"></div></div>
+        <div class="c-item ghost" style="--x:1;--y:62.5;--w:7;--h:22.5" data-speed=".4"><div class="c-inner" data-depth="3"></div></div>
+        <div class="c-item ghost" style="--x:91;--y:12;--w:7;--h:44" data-speed=".9"><div class="c-inner" data-depth="8"></div></div>
+        <div class="c-item ghost" style="--x:68;--y:52.5;--w:18;--h:16" data-speed=".8"><div class="c-inner" data-depth="7"></div></div>
+
+        <!-- IMG 01 portrait -->
+        <div class="c-item" style="--x:25;--y:13;--w:43;--h:65;--z:2" data-speed="1">
+          <div class="c-inner" data-depth="12">
+            <figure class="media" data-gl data-kind="0" data-seed="1.3" data-tone=".58" data-z="1">
+              <!-- <img src="images/portrait.jpg" alt="Ammar Arief"> -->
+              <span class="media__label">IMG 01 · Portrait</span>
+            </figure>
+          </div>
+        </div>
+        <!-- IMG 02 dark detail -->
+        <div class="c-item" style="--x:56;--y:2.5;--w:34;--h:50;--z:2" data-speed="1.25">
+          <div class="c-inner" data-depth="18">
+            <figure class="media" data-gl data-kind="1" data-seed="4.7" data-tone=".32" data-z="2">
+              <span class="media__label">IMG 02 · SRV250 detail, low light</span>
+            </figure>
+          </div>
+        </div>
+        <!-- IMG 03 light streak -->
+        <div class="c-item" style="--x:8;--y:60;--w:26;--h:27;--z:2" data-speed=".7">
+          <div class="c-inner" data-depth="22">
+            <figure class="media" data-gl data-kind="2" data-seed="2.1" data-tone=".35" data-z="3">
+              <span class="media__label">IMG 03 · Night ride, light trails</span>
+            </figure>
+          </div>
+        </div>
+        <!-- IMG 04 small texture -->
+        <div class="c-item" style="--x:65;--y:70;--w:17;--h:22.5;--z:2" data-speed="1.5">
+          <div class="c-inner" data-depth="26">
+            <figure class="media" data-gl data-kind="3" data-seed="8.2" data-tone=".4" data-z="3">
+              <span class="media__label">IMG 04 · Texture</span>
+            </figure>
+          </div>
+        </div>
+
+        <div class="arc" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 0A50 50 0 0 1 50 100" pathLength="1" stroke-dasharray="1"/></svg></div>
+
+        <span class="arrow" style="left:79%;top:37%" aria-hidden="true"><svg viewBox="0 0 46 20"><path d="M1 10h43M35 2l9 8-9 8"/></svg></span>
+        <span class="arrow" style="left:30%;top:64%" aria-hidden="true"><svg viewBox="0 0 46 20"><path d="M1 10h43M35 2l9 8-9 8"/></svg></span>
+        <span class="arrow arrow--green" style="left:85%;top:79%" aria-hidden="true"><svg viewBox="0 0 46 20"><path d="M1 10h43M35 2l9 8-9 8"/></svg></span>
+        <span class="arrow arrow--ghost" style="left:91.5%;top:31%" aria-hidden="true"><svg viewBox="0 0 46 20"><path d="M1 10h43M35 2l9 8-9 8"/></svg></span>
+        <span class="arrow arrow--ghost" style="left:91.5%;top:39%" aria-hidden="true"><svg viewBox="0 0 46 20"><path d="M1 10h43M35 2l9 8-9 8"/></svg></span>
+
+        <p class="counter mono"><b>01</b>/ 04</p>
+        <ul class="stack-list mono" aria-label="What I do">
+          <li>Web development</li>
+          <li>Motion · GSAP</li>
+          <li>Responsive UI</li>
+          <li>Three.js · exploring</li>
+        </ul>
+      </div>
+
+      <nav class="projects" aria-label="Featured projects">
+        <ol>
+          <li><a href="hardline.html"><span class="projects__n">01</span><span class="projects__t">Hardline</span><svg class="projects__ico ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg><span class="projects__s">A case study of bikes</span></a></li>
+          <li><a href="work.html"><span class="projects__n">02</span><span class="projects__t">WIE website</span><svg class="projects__ico ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg><span class="projects__s">Organisation website</span></a></li>
+          <li><a href="work.html"><span class="projects__n">03</span><span class="projects__t">SRIWI school</span><svg class="projects__ico ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg><span class="projects__s">School website</span></a></li>
+          <li><a href="work.html"><span class="projects__n">04</span><span class="projects__t">More projects</span><svg class="projects__ico ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg><span class="projects__s">And experiments</span></a></li>
+        </ol>
+      </nav>
+
+      <p class="scroll-cue mono" aria-hidden="true">Scroll <i></i></p>
+    </section>
+
+    <!-- ============================== INTRO ============================== -->
+    <section class="section wrap" aria-label="About, in short">
+      <p class="eyebrow mono" data-reveal>In short</p>
+      <p class="intro__text" data-fill>I'm a front-end developer from Selangor, Malaysia. I build websites with motion, layered imagery and scroll-driven storytelling. My degree is in Computer Forensics, so I like knowing how things work underneath.</p>
+      <dl class="intro__facts">
+        <div data-reveal><dt class="mono">Currently</dt><dd>Open to front-end roles and freelance projects</dd></div>
+        <div data-reveal><dt class="mono">Experience</dt><dd>Web Developer Trainee, Bike Bear Sdn. Bhd.</dd></div>
+        <div data-reveal><dt class="mono">Background</dt><dd>Bachelor of Computer Forensics</dd></div>
+      </dl>
+    </section>
+
+    <!-- ============================== SELECTED WORK ============================== -->
+    <section class="section wrap" aria-labelledby="sel">
+      <div class="section-title">
+        <h2 id="sel" class="display" data-split>Selected work</h2>
+        <a class="mono link" href="work.html">All six projects <svg class="ico" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a>
+      </div>
+      <div class="cards">
+        <a class="card card--a" href="hardline.html" data-cursor="View" data-speed-y=".3">
+          <div class="card__media" style="--ratio:16/10">
+            <figure class="media" data-gl data-kind="1" data-seed="11" data-tone=".36" data-media-reveal><span class="media__label">IMG 05 · HARDLINE screenshot</span></figure>
+          </div>
+          <div class="card__meta"><span class="card__n mono">01</span><h3 class="card__name display">Hardline</h3><svg class="card__ico ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg><span class="card__kind mono">Personal · concept, design &amp; build</span></div>
+        </a>
+        <a class="card card--b" href="work.html" data-cursor="View" data-speed-y=".8">
+          <div class="card__media" style="--ratio:4/5">
+            <figure class="media" data-gl data-kind="0" data-seed="6" data-tone=".5" data-media-reveal><span class="media__label">IMG 06 · WIE screenshot</span></figure>
+          </div>
+          <div class="card__meta"><span class="card__n mono">02</span><h3 class="card__name display">WIE</h3><svg class="card__ico ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg><span class="card__kind mono">Organisation website · <span class="tbd">[role]</span></span></div>
+        </a>
+        <a class="card card--c" href="work.html" data-cursor="View" data-speed-y=".5">
+          <div class="card__media" style="--ratio:4/3">
+            <figure class="media" data-gl data-kind="3" data-seed="3.4" data-tone=".45" data-media-reveal><span class="media__label">IMG 07 · SRIWI screenshot</span></figure>
+          </div>
+          <div class="card__meta"><span class="card__n mono">03</span><h3 class="card__name display">SRIWI</h3><svg class="card__ico ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg><span class="card__kind mono">School website · <span class="tbd">[role]</span></span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================== MARQUEE ============================== -->
+    <section class="marquee" data-marquee aria-label="Tools I work with">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item display">HTML &amp; CSS</span><span class="marquee__dot"></span>
+          <span class="marquee__item display marquee__item--outline">JavaScript</span><span class="marquee__dot"></span>
+          <span class="marquee__item display">GSAP</span><span class="marquee__dot"></span>
+          <span class="marquee__item display marquee__item--outline">ScrollTrigger</span><span class="marquee__dot"></span>
+          <span class="marquee__item display">WordPress</span><span class="marquee__dot"></span>
+          <span class="marquee__item display marquee__item--outline">Shopify</span><span class="marquee__dot"></span>
+          <span class="marquee__item display">Lenis</span><span class="marquee__dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== EXPERIENCE ============================== -->
+    <section class="section wrap" aria-labelledby="exp">
+      <div class="section-title">
+        <h2 id="exp" class="display" data-split>Experience</h2>
+        <span class="mono muted">Work &amp; study</span>
+      </div>
+      <ul class="rows">
+        <li class="row" data-reveal>
+          <span class="mono">01</span>
+          <div>
+            <h3 class="row__title display">Bike Bear Sdn. Bhd.</h3>
+            <ul class="row__chips mono" aria-label="Projects I contributed to"><li>AVALAND</li><li>AIRSCREAM</li><li>GutProtein</li><li>Shopify pages</li></ul>
+          </div>
+          <span class="mono muted">Web Developer Trainee<br>Industrial training</span>
+          <span class="mono"><span class="tbd">[dates]</span></span>
+        </li>
+        <li class="row" data-reveal>
+          <span class="mono">02</span>
+          <div><h3 class="row__title display">B. Computer Forensics</h3></div>
+          <span class="mono muted"><span class="tbd">[institution]</span></span>
+          <span class="mono"><span class="tbd">[years]</span></span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ============================== CONTACT ============================== -->
+  <footer class="contact" id="contact">
+    <p class="eyebrow mono" data-reveal>Contact</p>
+    <h2 class="contact__title display"><span class="line"><span data-split>Say</span></span><span class="line"><span class="outline" data-split>hello</span></span></h2>
+    <div class="contact__grid">
+      <p class="contact__mail" data-reveal>Open to front-end roles and freelance work.<br><span class="tbd">[your email]</span></p>
+      <ul class="contact__links mono" data-reveal>
+        <li><span>GitHub</span><span class="tbd">[link]</span></li>
+        <li><span>LinkedIn</span><span class="tbd">[link]</span></li>
+        <li><span>Local time</span><span data-clock>--:-- MYT</span></li>
+      </ul>
+    </div>
+    <div class="contact__bottom mono">
+      <span>© <span data-year>2026</span> Ammar Arief</span>
+      <span>Selangor, Malaysia</span>
+      <a class="link" href="#main">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/gl.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
