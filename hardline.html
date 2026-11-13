@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HARDLINE · Ammar Arief</title>
+  <meta name="description" content="HARDLINE, a case study of bikes. A personal project by Ammar Arief.">
+  <script>setTimeout(function () { document.documentElement.classList.add("no-curtain"); }, 4500);</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,100..900;1,50..150,100..900&family=IBM+Plex+Mono:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="curtain" aria-hidden="true"><span class="curtain__mark">AA</span><span class="curtain__count mono">000</span><span class="curtain__bar"></span></div>
+  <a class="skip mono" href="#main">Skip to content</a>
+
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Ammar Arief, home">
+      <span class="brand__mark">AA</span><span class="brand__sep"></span>
+      <span class="brand__text mono">Front-end developer<br>&amp; creative</span>
+    </a>
+    <span class="header__rule" aria-hidden="true"></span>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html"><span class="nav__n">01</span><span class="nav__t" data-hover-scramble>Home</span></a>
+      <a href="work.html" aria-current="page"><span class="nav__n">02</span><span class="nav__t" data-hover-scramble>Work</span></a>
+      <a href="about.html"><span class="nav__n">03</span><span class="nav__t" data-hover-scramble>About</span></a>
+      <a href="#contact"><span class="nav__n">04</span><span class="nav__t" data-hover-scramble>Contact</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="case-hero">
+      <p class="mono green" data-intro>Case study · 01 / 06</p>
+      <h1 class="display"><span class="line"><span data-intro-chars>Hardline</span></span></h1>
+      <div class="case-hero__sub">
+        <p data-intro>A case study of bikes</p>
+        <span class="mono" data-intro>Live site · <span class="tbd">[link]</span></span>
+      </div>
+    </section>
+
+    <dl class="facts mono">
+      <div data-intro><dt>Kind</dt><dd>Personal project</dd></div>
+      <div data-intro><dt>My role</dt><dd>Concept, design &amp; front-end build</dd></div>
+      <div data-intro><dt>Stack</dt><dd>HTML · CSS · JS · GSAP · ScrollTrigger · Lenis</dd></div>
+      <div data-intro><dt>Year</dt><dd><span class="tbd">[year]</span></dd></div>
+    </dl>
+
+    <!-- image grows to full screen as you scroll -->
+    <section class="expand" data-expand aria-label="HARDLINE opening screen">
+      <div class="expand__media">
+        <figure class="media" data-gl data-kind="2" data-seed="2.1" data-tone=".34" data-intro-media><span class="media__label">IMG 05 · HARDLINE opening screen</span></figure>
+      </div>
+    </section>
+
+    <section class="case-body" aria-labelledby="what">
+      <h2 id="what" class="display" data-split>What it is</h2>
+      <div class="text" data-reveal>
+        <p>A personal site about motorcycle culture, built as an experiment in cinematic web design: oversized type, strong negative space, layered imagery and scroll-driven storytelling.</p>
+        <span class="note mono">[Rewrite in your own words · two short paragraphs]</span>
+      </div>
+    </section>
+
+    <section class="case-body" aria-labelledby="dec">
+      <h2 id="dec" class="display" data-split>Decisions</h2>
+      <div class="text" data-reveal>
+        <p>Palette and type, as built. Bebas Neue for display, Manrope for text.</p>
+        <div class="swatches" aria-label="HARDLINE palette">
+          <span style="background:#E8E1D3">#E8E1D3</span>
+          <span style="background:#20211E;color:#E8E1D3">#20211E</span>
+          <span style="background:#263C35;color:#E8E1D3">#263C35</span>
+          <span style="background:#A45132;color:#E8E1D3">#A45132</span>
+        </div>
+        <span class="note mono">[One note per decision: what you tried first and why you changed it]</span>
+      </div>
+    </section>
+
+    <section class="case-body" aria-labelledby="build" style="padding-bottom: var(--section)">
+      <h2 id="build" class="display" data-split>Build</h2>
+      <div class="text" data-reveal>
+        <p>ScrollTrigger scenes, Lenis smoothing and layered image parallax.</p>
+        <span class="note mono">[Add a short code excerpt of the part you are proudest of]</span>
+      </div>
+    </section>
+
+    <!-- horizontal gallery -->
+    <section class="hscroll" data-hscroll aria-label="HARDLINE screens">
+      <div class="hscroll__track">
+        <div class="hscroll__item"><figure class="media" data-gl data-kind="1" data-seed="21" data-tone=".35"><span class="media__label">IMG 11 · Key scroll scene</span></figure></div>
+        <div class="hscroll__item hscroll__item--tall"><figure class="media" data-gl data-kind="0" data-seed="22" data-tone=".5"><span class="media__label">IMG 12 · Mobile view</span></figure></div>
+        <div class="hscroll__item"><figure class="media" data-gl data-kind="2" data-seed="23" data-tone=".3"><span class="media__label">IMG 13 · Type detail</span></figure></div>
+        <div class="hscroll__item hscroll__item--tall"><figure class="media" data-gl data-kind="3" data-seed="24" data-tone=".42"><span class="media__label">IMG 14 · Detail</span></figure></div>
+        <div class="hscroll__item"><figure class="media" data-gl data-kind="1" data-seed="25" data-tone=".4"><span class="media__label">IMG 15 · Closing screen</span></figure></div>
+      </div>
+    </section>
+
+    <a class="next" href="work.html" data-cursor="Back">
+      <span class="mono muted">Back to</span>
+      <span class="next__title display" style="display:block">All work</span>
+    </a>
+  </main>
+
+  <footer class="contact" id="contact">
+    <p class="eyebrow mono" data-reveal>Contact</p>
+    <h2 class="contact__title display"><span class="line"><span data-split>Say</span></span><span class="line"><span class="outline" data-split>hello</span></span></h2>
+    <div class="contact__grid">
+      <p class="contact__mail" data-reveal>Open to front-end roles and freelance work.<br><span class="tbd">[your email]</span></p>
+      <ul class="contact__links mono" data-reveal>
+        <li><span>GitHub</span><span class="tbd">[link]</span></li>
+        <li><span>LinkedIn</span><span class="tbd">[link]</span></li>
+        <li><span>Local time</span><span data-clock>--:-- MYT</span></li>
+      </ul>
+    </div>
+    <div class="contact__bottom mono">
+      <span>© <span data-year>2026</span> Ammar Arief</span>
+      <span>Selangor, Malaysia</span>
+      <a class="link" href="#main">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/gl.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
